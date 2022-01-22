@@ -3,6 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from "react-native";
 import CustomComponent from "./Src/Screens/CustomComponent";
+import FirstChallenge from './Src/Screens/FirstChallenge';
 
 
 // Create a Component that returning some jsX/ simple function //
@@ -12,6 +13,7 @@ const App = () => {
       <Text style={styles.TextStyle}>App</Text>
       <StatusBar style='auto' />
       <CustomComponent />
+      <FirstChallenge/>
     </View>
   );
 };
@@ -20,7 +22,7 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'green',
+    backgroundColor: 'skyblue',
     alignItems: 'left',
     justifyContent: 'center',
 },
@@ -29,7 +31,7 @@ const styles = StyleSheet.create({
     display:"flex",
     justifyContent:"center",
     alignContent:"center",
-    color: "red",
+    color: "black",
   },
 });
 
