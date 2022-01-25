@@ -58,11 +58,11 @@ const FlatListDemo = () => {
         },
         {
             index: "14",
-            name: "zayn",
+            name: "golang",
         },
         {
             index: "15",
-            name: "zayn",
+            name: "java",
         },
 
 
@@ -73,6 +73,14 @@ const FlatListDemo = () => {
             keyExtractor={(key) => {
                 return key.index;
             }}
+            // --------------Horizontally  Scrolling------------- //
+            horizontal
+            // inverted
+            // numColumns={2}
+            // --------------start Show Scrolling ---------------//
+            showsHorizontalScrollIndicator={false}
+            // -------------End Show Scrolling Indicator------------//
+
             data={names}
             renderItem={({ item }) => {
                 console.log(item.name);
