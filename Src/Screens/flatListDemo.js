@@ -5,23 +5,76 @@ import { Text, View, StyleSheet, FlatList } from 'react-native';
 const FlatListDemo = () => {
     const names = [
         {
-            name: "Zayn",
+            index: "1",
+            name: "PHP",
         },
         {
-            name: "Web Developer",
+            index: "2",
+            name: "Laravel",
         },
         {
-            name: "and Laravel",
+            index: "3",
+            name: "ReactJS",
         },
         {
-            name: "Expert",
+            index: "4",
+            name: "HTML",
         },
+        {
+            index: "5",
+            name: "JavaScript",
+        },
+        {
+            index: "6",
+            name: "CSS",
+        },
+        {
+            index: "7",
+            name: "Django",
+        },
+        {
+            index: "8",
+            name: "MongoDB",
+        },
+        {
+            index: "9",
+            name: "ReactNative",
+        },
+        {
+            index: "10",
+            name: "git",
+        },
+        {
+            index: "11",
+            name: "Flutter",
+        },
+        {
+            index: "12",
+            name: "Dart",
+        },
+        {
+            index: "13",
+            name: "Swift",
+        },
+        {
+            index: "14",
+            name: "zayn",
+        },
+        {
+            index: "15",
+            name: "zayn",
+        },
+
 
     ];
     return (
         <FlatList
+            style={styles.listStyle}
+            keyExtractor={(key) => {
+                return key.index;
+            }}
             data={names}
-            renderItem={({ item}) => {
+            renderItem={({ item }) => {
                 console.log(item.name);
                 return <Text style={styles.textStyle}> {item.name} </Text>
 
@@ -33,12 +86,22 @@ const FlatListDemo = () => {
 const styles = StyleSheet.create({
     textStyle: {
         fontSize: 30,
-        color: "green",
-        backgroundColor: "white",
+        color: "white",
+        backgroundColor: "red",
         textAlign: "center",
+        margin: 15,
         justifyContent: "center"
 
+
+    },
+    listStyle: {
+        textAlign: "center",
+        margin: 20,
+        padding: 10,
+
     }
+
+
 });
 
 export default FlatListDemo;
