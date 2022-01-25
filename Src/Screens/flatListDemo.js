@@ -21,9 +21,9 @@ const FlatListDemo = () => {
     return (
         <FlatList
             data={names}
-            renderItem={(element) => {
-                console.log(element.item.name);
-                return <Text style={styles.textStyle}> {element.item.name} </Text>
+            renderItem={({ item}) => {
+                console.log(item.name);
+                return <Text style={styles.textStyle}> {item.name} </Text>
 
             }}
         />
