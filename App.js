@@ -5,6 +5,7 @@ import { StyleSheet, Text, View, } from "react-native";
 // import CustomComponent from "./Src/Screens/CustomComponent";
 // import FirstChallenge from './Src/Screens/FirstChallenge';
 import FlatListDemo from './Src/Screens/FlatListDemo';
+import Imagesfile from './Src/Screens/Images';
 
 
 
@@ -21,7 +22,7 @@ const App = () => {
 
     //   </View>
     <View>
-      <FlatListDemo />
+      <Imagesfile />
     </View>
   );
 };
